@@ -1,4 +1,11 @@
 {
     "liveServer.settings.port": 5501,
-    "git.ignoreLimitWarning": true
+    "git.ignoreLimitWarning": true,
+    "editor.formatOnSave": false,
+    "editor.formatOnType": false,
+    "editor.formatOnPaste": false,
+    "html.format.enable": false
 }
+ 
+     
+   
