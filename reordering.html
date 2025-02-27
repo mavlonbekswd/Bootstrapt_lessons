@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Reordering Examples</title>
+    <link rel="stylesheet" href="./Bootstrap_library copy/css/bootstrap.min.css">
+    <style>
+        .row { margin-top: 20px; }
+        .row div {
+            padding: 20px;
+            background-color: #007bff;
+            border: 1px solid #ffffff;
+            color: #ffffff;
+        }
+        .title {
+            color: #333;
+            margin: 30px 0 10px 0;
+        }
+        .demo-box {
+            background-color: #f8f9fa;
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="my-4">Bootstrap Reordering Misollari</h2>
+
+        <!-- Order Classes -->
+        <h4 class="title">1. Order Klasslari</h4>
+        <div class="demo-box">
+            <div class="row">
+                <div class="col order-3"><h4>Birinchi</h4><p>order-3</p></div>
+                <div class="col order-1"><h4>Ikkinchi</h4><p>order-1</p></div>
+                <div class="col order-2"><h4>Uchinchi</h4><p>order-2</p></div>
+            </div>
+        </div>
+
+        <!-- Responsive Order -->
+        <h4 class="title">2. Responsive Order</h4>
+        <div class="demo-box">
+            <div class="row">
+                <div class="col order-md-3 order-1"><h4>A</h4><p>Mobile: 1-chi, Desktop: 3-chi</p></div>
+                <div class="col order-md-1 order-2"><h4>B</h4><p>Mobile: 2-chi, Desktop: 1-chi</p></div>
+                <div class="col order-md-2 order-3"><h4>C</h4><p>Mobile: 3-chi, Desktop: 2-chi</p></div>
+            </div>
+        </div>
+
+        <!-- First and Last -->
+        <h4 class="title">3. Birinchi va Oxirgi</h4>
+        <div class="demo-box">
+            <div class="row">
+                <div class="col order-last"><h4>Oxirgi</h4><p>order-last</p></div>
+                <div class="col"><h4>O'rtada</h4><p>default order</p></div>
+                <div class="col order-first"><h4>Birinchi</h4><p>order-first</p></div>
+            </div>
+        </div>
+
+        <!-- Push and Pull -->
+        <h4 class="title">4. Push va Pull</h4>
+        <div class="demo-box">
+            <div class="row">
+                <div class="col-md-4 offset-md-4"><h4>O'rtada</h4><p>offset-md-4</p></div>
+                <div class="col-md-4"><h4>Oxirida</h4><p>default position</p></div>
+            </div>
+        </div>
+
+        <!-- Nested Reordering -->
+        <h4 class="title">5. Ichma-ich Reordering</h4>
+        <div class="demo-box">
+            <div class="row">
+                <div class="col-md-8 order-md-2">
+                    <h4>Asosiy Kontent</h4>
+                    <div class="row">
+                        <div class="col-md-6 order-md-2"><p>Ichki 2-chi</p></div>
+                        <div class="col-md-6 order-md-1"><p>Ichki 1-chi</p></div>
+                    </div>
+                </div>
+                <div class="col-md-4 order-md-1">
+                    <h4>Yon Panel</h4>
+                    <p>Sidebar content</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Izohlar -->
+    <div class="container mt-4">
+        <div class="alert alert-info">
+            <h5>Reordering Turlari:</h5>
+            <ul>
+                <li><strong>Order Klasslari:</strong> order-1 dan order-5 gacha</li>
+                <li><strong>Responsive Order:</strong> order-{breakpoint}-{number}</li>
+                <li><strong>First/Last:</strong> order-first va order-last</li>
+                <li><strong>Push/Pull:</strong> offset-md-* klasslari bilan</li>
+                <li><strong>Ichma-ich:</strong> Nested elementlarni qayta tartiblash</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="./Bootstrap_library copy/js/bootstrap.bundle.js"></script>
+</body>
+</html>
