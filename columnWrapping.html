@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Column Wrapping</title>
+    <link rel="stylesheet" href="./Bootstrap_library copy/css/bootstrap.min.css">
+    <style>
+        .row { margin-top: 20px; }
+        .row div {
+            padding: 20px;
+            background-color: #6c757d;
+            border: 1px solid #ffffff;
+            color: #ffffff;
+        }
+        .title {
+            color: #333;
+            margin: 30px 0 10px 0;
+        }
+        .demo-box {
+            background-color: #f8f9fa;
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="my-4">Column Wrapping Misollari</h2>
+
+        <!-- Avtomatik Wrapping -->
+        <h4 class="title">1. Avtomatik Wrapping</h4>
+        <div class="demo-box">
+            <div class="row">
+                <div class="col-md-4"><h4>4 birlik</h4><p>col-md-4</p></div>
+                <div class="col-md-4"><h4>4 birlik</h4><p>col-md-4</p></div>
+                <div class="col-md-4"><h4>4 birlik</h4><p>col-md-4</p></div>
+                <div class="col-md-4"><h4>4 birlik</h4><p>col-md-4</p></div>
+                <!-- Avtomatik yangi qatorga o'tadi -->
+            </div>
+        </div>
+
+        <!-- Break Points bilan Wrapping -->
+        <h4 class="title">2. Break Points bilan Wrapping</h4>
+        <div class="demo-box">
+            <div class="row">
+                <div class="col-sm-6 col-md-4"><h4>Responsive</h4><p>sm: 6, md: 4</p></div>
+                <div class="col-sm-6 col-md-4"><h4>Responsive</h4><p>sm: 6, md: 4</p></div>
+                <div class="col-sm-6 col-md-4"><h4>Responsive</h4><p>sm: 6, md: 4</p></div>
+                <!-- sm da 2 ta, md da 3 ta ustun -->
+            </div>
+        </div>
+
+        <!-- w-100 bilan Majburiy Wrapping -->
+        <h4 class="title">3. Majburiy Wrapping (w-100)</h4>
+        <div class="demo-box">
+            <div class="row">
+                <div class="col-md-4"><h4>Birinchi</h4><p>col-md-4</p></div>
+                <div class="col-md-4"><h4>Ikkinchi</h4><p>col-md-4</p></div>
+                <div class="w-100"></div> <!-- Majburiy yangi qator -->
+                <div class="col-md-4"><h4>Yangi qator</h4><p>col-md-4</p></div>
+                <div class="col-md-4"><h4>Yangi qator</h4><p>col-md-4</p></div>
+            </div>
+        </div>
+
+        <!-- No Gutters -->
+        <h4 class="title">4. Oraliqsiz (No Gutters)</h4>
+        <div class="demo-box">
+            <div class="row g-0">
+                <div class="col-md-4"><h4>Oraliqsiz</h4><p>g-0</p></div>
+                <div class="col-md-4"><h4>Oraliqsiz</h4><p>g-0</p></div>
+                <div class="col-md-4"><h4>Oraliqsiz</h4><p>g-0</p></div>
+            </div>
+        </div>
+
+        <!-- Variable Width -->
+        <h4 class="title">5. O'zgaruvchan Kenglik</h4>
+        <div class="demo-box">
+            <div class="row">
+                <div class="col"><h4>Auto</h4><p>col</p></div>
+                <div class="col-md-6"><h4>6 birlik</h4><p>col-md-6</p></div>
+                <div class="col"><h4>Auto</h4><p>col</p></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Izohlar -->
+    <div class="container mt-4">
+        <div class="alert alert-info">
+            <h5>Wrapping Turlari:</h5>
+            <ul>
+                <li><strong>Avtomatik Wrapping:</strong> 12 birlikdan oshganda avtomatik yangi qatorga o'tadi</li>
+                <li><strong>Break Points:</strong> Ekran o'lchamiga qarab wrapping bo'ladi</li>
+                <li><strong>w-100:</strong> Majburiy yangi qatorga o'tkazish uchun</li>
+                <li><strong>g-0:</strong> Ustunlar orasidagi masofani yo'q qilish</li>
+                <li><strong>O'zgaruvchan Kenglik:</strong> Auto va fixed kengliklarni aralashtirish</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="./Bootstrap_library copy/js/bootstrap.bundle.js"></script>
+</body>
+</html>

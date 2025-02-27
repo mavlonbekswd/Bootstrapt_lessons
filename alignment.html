@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Alignment Examples</title>
+    <link rel="stylesheet" href="./Bootstrap_library copy/css/bootstrap.min.css">
+    <style>
+        .row { margin-top: 20px; }
+        .row div {
+            padding: 20px;
+            background-color: #4CAF50;
+            border: 1px solid #ffffff;
+            color: #ffffff;
+        }
+        .title {
+            color: #333;
+            margin: 30px 0 10px 0;
+        }
+        .demo-box {
+            background-color: #f8f9fa;
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2 class="my-4">Bootstrap Alignment Misollari</h2>
+
+    <!-- Vertikal Alignment -->
+    <h4 class="title">1. Vertikal (Tik) Joylashuv</h4>
+    <div class="demo-box">
+        <div class="row" style="height: 300px; background-color: #e9ecef;">
+            <!-- Yuqorida -->
+            <div class="col-md-4 align-self-start">
+                <h4>Yuqorida</h4>
+                <p>align-self-start</p>
+            </div>
+            <!-- O'rtada -->
+            <div class="col-md-4 align-self-center">
+                <h4>O'rtada</h4>
+                <p>align-self-center</p>
+            </div>
+            <!-- Pastda -->
+            <div class="col-md-4 align-self-end">
+                <h4>Pastda</h4>
+                <p>align-self-end</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gorizontal Alignment -->
+    <h4 class="title">2. Gorizontal (Yotiq) Joylashuv</h4>
+    <div class="demo-box">
+        <!-- Chap tomonda -->
+        <div class="row justify-content-start mb-3">
+            <div class="col-md-3"><h4>Chap</h4></div>
+            <div class="col-md-3"><h4>Chap</h4></div>
+        </div>
+        <!-- Markazda -->
+        <div class="row justify-content-center mb-3">
+            <div class="col-md-3"><h4>Markaz</h4></div>
+            <div class="col-md-3"><h4>Markaz</h4></div>
+        </div>
+        <!-- O'ngda -->
+        <div class="row justify-content-end mb-3">
+            <div class="col-md-3"><h4>O'ng</h4></div>
+            <div class="col-md-3"><h4>O'ng</h4></div>
+        </div>
+    </div>
+
+    <!-- Teng Taqsimlash -->
+    <h4 class="title">3. Teng Taqsimlash</h4>
+    <div class="demo-box">
+        <!-- Between -->
+        <div class="row justify-content-between mb-3">
+            <div class="col-md-3"><h4>Between</h4></div>
+            <div class="col-md-3"><h4>Between</h4></div>
+            <div class="col-md-3"><h4>Between</h4></div>
+        </div>
+        <!-- Around -->
+        <div class="row justify-content-around mb-3">
+            <div class="col-md-3"><h4>Around</h4></div>
+            <div class="col-md-3"><h4>Around</h4></div>
+            <div class="col-md-3"><h4>Around</h4></div>
+        </div>
+        <!-- Evenly -->
+        <div class="row justify-content-evenly">
+<div class="col-md-3"><h4>Evenly</h4></div>
+            <div class="col-md-3"><h4>Evenly</h4></div>
+            <div class="col-md-3"><h4>Evenly</h4></div>
+        </div>
+    </div>
+
+    <!-- Aralash Alignment -->
+    <h4 class="title">4. Aralash Joylashuv</h4>
+    <div class="demo-box">
+        <div class="row align-items-center justify-content-between" style="height: 200px; background-color: #e9ecef;">
+            <div class="col-md-3 align-self-start">
+                <h4>Yuqori</h4>
+                <p>align-self-start</p>
+            </div>
+            <div class="col-md-3">
+                <h4>O'rta</h4>
+                <p>align-items-center</p>
+            </div>
+            <div class="col-md-3 align-self-end">
+                <h4>Past</h4>
+                <p>align-self-end</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Offset -->
+    <h4 class="title">5. Offset bilan Joylashuv</h4>
+    <div class="demo-box">
+        <div class="row">
+            <div class="col-md-4 offset-md-2">
+                <h4>2 ustun tashlab</h4>
+                <p>offset-md-2</p>
+            </div>
+            <div class="col-md-4 offset-md-1">
+                <h4>1 ustun tashlab</h4>
+                <p>offset-md-1</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- Vertikal (Tik) Joylashuv:
+align-items-start: Elementlarni yuqorida joylashtirish
+align-items-center: Elementlarni o'rtada joylashtirish
+align-items-end: Elementlarni pastda joylashtirish
+
+Gorizontal (Yotiq) Joylashuv:
+justify-content-start: Chap tomonda
+justify-content-center: Markazda
+justify-content-end: O'ng tomonda
+justify-content-between: Elementlar orasida teng masofa
+justify-content-around: Har tomondan teng masofa
+
+Individual Element Joylashuvi:
+align-self-start: Element o'zini yuqorida joylashtiradi
+align-self-center: Element o'zini o'rtada joylashtiradi
+align-self-end: Element o'zini pastda joylashtiradi
+
+Offset bilan Joylashuv:
+offset-md-2: 2 ustun tashlab joylashish
+offset-md-1: 1 ustun tashlab joylashish
+
+Muhim xususiyatlar:
+Barcha joylashuvlar responsive
+Har xil ekran o'lchamlarida to'g'ri ishlaydi
+Kombinatsiya qilib ishlatish mumkin
+container ichida ishlaydi -->
+
+<script src="./Bootstrap_library copy/js/bootstrap.bundle.js"></script>
+</body>
+</html>
