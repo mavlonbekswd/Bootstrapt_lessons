@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Offsetting Columns</title>
+    <link rel="stylesheet" href="./Bootstrap_library copy/css/bootstrap.min.css">
+    <style>
+        .row { margin-top: 20px; }
+        .row div[class^="col"] {
+            padding: 20px;
+            background-color: #28a745;
+            border: 1px solid #ffffff;
+            color: #ffffff;
+        }
+        .title {
+            color: #333;
+            margin: 30px 0 10px 0;
+        }
+        .demo-box {
+            background-color: #f8f9fa;
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .offset-example {
+            background-color: #e9ecef;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="my-4">Offsetting Columns Misollari</h2>
+
+        <!-- Asosiy Offset -->
+        <h4 class="title">1. Oddiy Offset</h4>
+        <div class="demo-box">
+            <div class="row">
+                <div class="col-md-4">4 birlik</div>
+                <div class="col-md-4 offset-md-4">4 birlik (4 offset)</div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 offset-md-3">3 birlik (3 offset)</div>
+                <div class="col-md-3 offset-md-3">3 birlik (3 offset)</div>
+            </div>
+        </div>
+
+        <!-- Responsive Offset -->
+        <h4 class="title">2. Responsive Offset</h4>
+        <div class="demo-box">
+            <div class="row">
+                <div class="col-sm-5 col-md-6 offset-sm-2 offset-md-0">
+                    <h4>Responsive Offset</h4>
+                    <p>sm: 2 offset, md: no offset</p>
+                </div>
+                <div class="col-sm-5 col-md-6">
+                    <h4>Normal Column</h4>
+                    <p>No offset</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Multiple Offsets -->
+        <h4 class="title">3. Ko'p Offsetlar</h4>
+        <div class="demo-box">
+            <div class="row">
+                <div class="col-md-4 offset-md-1">4 birlik (1 offset)</div>
+                <div class="col-md-4 offset-md-2">4 birlik (2 offset)</div>
+            </div>
+        </div>
+
+        <!-- Reset Offset -->
+        <h4 class="title">4. Offset Reset</h4>
+        <div class="demo-box">
+            <div class="row">
+                <div class="col-sm-6 col-md-4 offset-sm-3 offset-md-0">
+                    <h4>Reset Offset</h4>
+                    <p>sm: 3 offset, md: reset to 0</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Margin Utilities -->
+        <h4 class="title">5. Margin Utilities bilan</h4>
+        <div class="demo-box">
+            <div class="row">
+                <div class="col-md-4 ms-auto">4 birlik (ms-auto)</div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 me-auto">3 birlik (me-auto)</div>
+                <div class="col-md-3">3 birlik</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Izohlar -->
+    <div class="container mt-4">
+        <div class="alert alert-info">
+            <h5>Offset Turlari:</h5>
+            <ul>
+                <li><strong>Oddiy Offset:</strong> offset-md-* klasslari</li>
+                <li><strong>Responsive Offset:</strong> Har xil ekran o'lchamlarida har xil offset</li>
+                <li><strong>Ko'p Offsetlar:</strong> Bir nechta ustunlarni surib joylashtirish</li>
+                <li><strong>Offset Reset:</strong> Katta ekranlarda offsetni bekor qilish</li>
+                <li><strong>Margin Utilities:</strong> ms-auto, me-auto kabi klasslar</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="./Bootstrap_library copy/js/bootstrap.bundle.js"></script>
+</body>
+</html>
