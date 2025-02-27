@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Gutters Examples</title>
+    <link rel="stylesheet" href="./Bootstrap_library copy/css/bootstrap.min.css">
+    <style>
+        .row div[class^="col"] {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            background-color: #dc3545;
+            border: 1px solid #ffffff;
+            color: #ffffff;
+        }
+        .title {
+            color: #333;
+            margin: 30px 0 10px 0;
+        }
+        .demo-box {
+            background-color: #f8f9fa;
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .bg-light {
+            background-color: #e9ecef;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="my-4">Bootstrap Gutters Misollari</h2>
+
+        <!-- Default Gutters -->
+        <h4 class="title">1. Standart Gutters</h4>
+        <div class="demo-box">
+            <div class="row">
+                <div class="col-md-6"><h4>Standart</h4><p>Default gutter (1.5rem)</p></div>
+                <div class="col-md-6"><h4>Standart</h4><p>Default gutter (1.5rem)</p></div>
+            </div>
+        </div>
+
+        <!-- No Gutters -->
+        <h4 class="title">2. Guttersiz (g-0)</h4>
+        <div class="demo-box">
+            <div class="row g-0">
+                <div class="col-md-6"><h4>Guttersiz</h4><p>g-0</p></div>
+                <div class="col-md-6"><h4>Guttersiz</h4><p>g-0</p></div>
+            </div>
+        </div>
+
+        <!-- Different Gutter Sizes -->
+        <h4 class="title">3. Har Xil Gutter O'lchamlari</h4>
+        <div class="demo-box">
+            <!-- Kichik (g-1) -->
+            <div class="row g-1 mb-3">
+                <div class="col-md-6"><h4>Kichik</h4><p>g-1 (0.25rem)</p></div>
+                <div class="col-md-6"><h4>Kichik</h4><p>g-1 (0.25rem)</p></div>
+            </div>
+            <!-- O'rta (g-3) -->
+            <div class="row g-3 mb-3">
+                <div class="col-md-6"><h4>O'rta</h4><p>g-3 (1rem)</p></div>
+                <div class="col-md-6"><h4>O'rta</h4><p>g-3 (1rem)</p></div>
+            </div>
+            <!-- Katta (g-5) -->
+            <div class="row g-5">
+                <div class="col-md-6"><h4>Katta</h4><p>g-5 (3rem)</p></div>
+                <div class="col-md-6"><h4>Katta</h4><p>g-5 (3rem)</p></div>
+            </div>
+        </div>
+
+        <!-- Horizontal & Vertical Gutters -->
+        <h4 class="title">4. Gorizontal va Vertikal Gutterlar</h4>
+        <div class="demo-box">
+            <!-- Faqat gorizontal -->
+            <div class="row gx-5 gy-0 mb-3">
+                <div class="col-md-6"><h4>Gorizontal</h4><p>gx-5 (3rem)</p></div>
+                <div class="col-md-6"><h4>Gorizontal</h4><p>gx-5 (3rem)</p></div>
+            </div>
+            <!-- Faqat vertikal -->
+            <div class="row gx-0 gy-5">
+                <div class="col-md-6"><h4>Vertikal</h4><p>gy-5 (3rem)</p></div>
+                <div class="col-md-6"><h4>Vertikal</h4><p>gy-5 (3rem)</p></div>
+            </div>
+        </div>
+
+        <!-- Responsive Gutters -->
+        <h4 class="title">5. Responsive Gutterlar</h4>
+        <div class="demo-box">
+            <div class="row g-md-5 g-1">
+                <div class="col-md-4"><h4>Responsive</h4><p>Mobile: g-1, Desktop: g-5</p></div>
+                <div class="col-md-4"><h4>Responsive</h4><p>Mobile: g-1, Desktop: g-5</p></div>
+                <div class="col-md-4"><h4>Responsive</h4><p>Mobile: g-1, Desktop: g-5</p></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Izohlar -->
+    <div class="container mt-4">
+        <div class="alert alert-info">
+            <h5>Gutter Turlari va O'lchamlari:</h5>
+            <ul>
+                <li><strong>g-0:</strong> Gutterlarni o'chirish</li>
+                <li><strong>g-1 dan g-5 gacha:</strong> Har xil o'lchamdagi gutterlar</li>
+                <li><strong>gx-*:</strong> Faqat gorizontal gutterlar</li>
+                <li><strong>gy-*:</strong> Faqat vertikal gutterlar</li>
+                <li><strong>g-{breakpoint}-*:</strong> Responsive gutterlar</li>
+            </ul>
+            <p>O'lchamlar:</p>
+            <ul>
+                <li>g-0: 0</li>
+                <li>g-1: 0.25rem (4px)</li>
+                <li>g-2: 0.5rem (8px)</li>
+                <li>g-3: 1rem (16px)</li>
+                <li>g-4: 1.5rem (24px)</li>
+                <li>g-5: 3rem (48px)</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="./Bootstrap_library copy/js/bootstrap.bundle.js"></script>
+</body>
+</html>
