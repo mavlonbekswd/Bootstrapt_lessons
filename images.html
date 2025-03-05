@@ -2,37 +2,62 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
- <link rel="stylesheet" href="./Bootstrap_library copy/css/bootstrap.min.css">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Images</title>
+    <link rel="stylesheet" href="./Bootstrap_library copy/css/bootstrap.min.css">
 </head>
 <body>
+    <div class="container mt-4">
+        <!-- ODDIY RASM -->
+        <h3>Oddiy Rasm</h3>
+    <img src="./img/mee.jpg" alt="Oddiy rasm">
 
-            <style>
-            .wrapper {
-            width: 400px;
-            height: 400px;
-            }
-            </style>
-    <div class="container">
-    <div class="wrapper">
-        
-    <img src="./img/mee.jpg" alt="Rasmlar" class="img-fluid">
-        
+        <!-- RESPONSIVE RASM -->
+        <h3 class="mt-4">Responsive Rasm (img-fluid)</h3>
+    <img src="./img/mee.jpg" alt="Responsive rasm" class="img-fluid">
 
-        <h1>Img thumbnails</h1>
-        <img src="./img/mee.jpg" alt="" class="img-fluid img-thumbnail">
-        <h1>Img rounded</h1>
-        <img src="./img/mee.jpg" alt="" class="img-fluid rounded-circle">
+        <!-- THUMBNAIL RASM -->
+        <h3 class="mt-4">Thumbnail Rasm (img-thumbnail)</h3>
+    <img src="./img/mee.jpg" alt="Thumbnail" class="img-thumbnail">
+
+        <!-- ROUNDED RASMLAR -->
+        <h3 class="mt-4">Rounded Rasmlar</h3>
+        <div class="d-flex gap-3">
+        <img src="./img/mee.jpg" alt="Rounded" class="rounded">
+            <img src="./img/mee.jpg" alt="Circle" class="rounded-circle">
+        <img src="./img/mee.jpg" alt="Pill" class="rounded-pill">
+        </div>
+
+        <!-- FIGURE RASM -->
+        <h3 class="mt-4">Figure Rasm</h3>
+        <figure class="figure">
+        <img src="./img/mee.jpg" alt="Figure" class="figure-img img-fluid rounded">
+            <figcaption class="figure-caption">Rasm uchun izoh matni</figcaption>
+        </figure>
+
+        <!-- RASM JOYLASHUVI -->
+        <h3 class="mt-4">Rasm Joylashuvi</h3>
+        <div class="text-center">
+        <img src="./img/mee.jpg" alt="Centered" class="img-fluid">
+        </div>
+
+        <!-- FLOAT RASMLAR -->
+        <h3 class="mt-4">Float Rasmlar</h3>
+        <div class="clearfix">
+        <img src="./img/mee.jpg" alt="Float start" class="float-start me-3">
+        <img src="./img/mee.jpg" alt="Float end" class="float-end ms-3">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+
+        <!-- BACKGROUND IMAGE -->
+        <h3 class="mt-4">Background Image</h3>
+        <div class="bg-image p-5 text-center shadow-1-strong rounded mb-5 text-white"
+         style="background-image: url('./img/mee.jpg');">
+            <h1 class="mb-3">Background Rasm</h1>
+            <p>Rasm ustidagi matn</p>
+        </div>
     </div>
-        <h1>Img align</h1>
-        <img src="./img/mee.jpg" alt=""  width="200" class="float-start">
-        <img src="./img/mee.jpg" alt=""  width="200" class="float-end">
-        <img src="./img/mee.jpg" alt=""  width="200" class="d-block mx-auto">
-    
-</div>
 
-<script src="./Bootstrap_library copy/js/bootstrap.bundle.js"></script>
+    <script src="./Bootstrap_library copy/js/bootstrap.bundle.js"></script>
 </body>
 </html>
